@@ -4,6 +4,7 @@ TEMPLATE = app
 QT += core
 QT += gui
 QT += widgets
+QT += xml
 
 DESTDIR = ../../bin
 
@@ -29,6 +30,9 @@ win32 {
         LIBS += -L$$OSG_LIB_DIRECTORY -losgQt5d
         LIBS += -L$$OSG_LIB_DIRECTORY -losgAnimationd
 
+        LIBS += -L../../lib -lCfgReader_d
+        LIBS += -L../../lib -lCfgEditor_d
+
     } else {
 
         LIBS += -L$$OSG_LIB_DIRECTORY -losg
@@ -38,6 +42,9 @@ win32 {
         LIBS += -L$$OSG_LIB_DIRECTORY -losgGA
         LIBS += -L$$OSG_LIB_DIRECTORY -losgQt5
         LIBS += -L$$OSG_LIB_DIRECTORY -losgAnimation
+
+        LIBS += -L../../lib -lCfgReader
+        LIBS += -L../../lib -lCfgEditor
     }
 
     INCLUDEPATH += $$OSG_INCLUDE_DIRECTORY
@@ -57,6 +64,9 @@ unix {
         LIBS += -losgQt5d
         LIBS += -losgAnimationd
 
+        LIBS += -L../../lib -lCfgReader_d
+        LIBS += -L../../lib -lCfgEditor_d
+
     } else {
 
         LIBS += -losg
@@ -66,6 +76,9 @@ unix {
         LIBS += -losgGA
         LIBS += -losgQt5
         LIBS += -losgAnimation
+
+        LIBS += -L../../lib -lCfgReader
+        LIBS += -L../../lib -lCfgEditor
     }
 }
 

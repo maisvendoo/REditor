@@ -28,6 +28,9 @@ private:
 
     Ui::MainWindow *ui;
 
+private slots:
+
+    void slotCreateNewRoute();
 };
 
 #endif // MAINWINDOW_H
