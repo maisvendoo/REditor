@@ -32,6 +32,12 @@ public:
 
     bool isChanged();
 
+    QString getName() const;
+
+    QString getTitle() const;
+
+    QString getDescription() const;
+
 private:
 
     /// Имя файла проекта

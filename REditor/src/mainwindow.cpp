@@ -22,6 +22,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     connect(ui->actionNew_route, &QAction::triggered, this, &MainWindow::slotCreateNewRoute);
     connect(ui->actionOpen_route, &QAction::triggered, this, &MainWindow::slotLoadRouteProject);
     connect(ui->actionSave, &QAction::triggered, this, &MainWindow::slotSaveRouteProject);
+    connect(ui->actionQuit, &QAction::triggered, this, &MainWindow::close);
 
     connect(ui->leRouteTitle, &QLineEdit::textChanged, this, &MainWindow::slotRoutePropertiesChanged);
     connect(ui->ptRouteDescription, &QPlainTextEdit::textChanged, this, &MainWindow::slotRoutePropertiesChanged);
@@ -68,7 +69,7 @@ bool MainWindow::checkUnsavedChanges()
     if (current_project->isChanged())
     {
         int button = QMessageBox::warning(this, tr("Warning"),
-                                        tr("Curren project is modified.\n Do you want to save it?"),
+                                        tr("Current route is modified.\n Do you want to save it?"),
                                         tr("Yes"), tr("No"), tr("Cancel"), 0, 2);
 
         switch (button)
