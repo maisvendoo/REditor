@@ -3,6 +3,8 @@
 
 #include    <QMainWindow>
 
+class Project;
+
 //------------------------------------------------------------------------------
 //
 //------------------------------------------------------------------------------
@@ -26,11 +28,25 @@ public:
 
 private:
 
-    Ui::MainWindow *ui;
+    Ui::MainWindow  *ui;
+
+    Project         *current_project;
+
+    void enablePropertiesButtons();
+
+    void disablePropertiesButtons();
 
 private slots:
 
     void slotCreateNewRoute();
+
+    void slotLoadRouteProject();
+
+    void slotSaveRouteProject();
+
+    void slotRoutePropertiesChanged();
+
+    void slotApplyRouteProperties();
 };
 
 #endif // MAINWINDOW_H

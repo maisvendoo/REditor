@@ -84,9 +84,7 @@ unix {
 
 INCLUDEPATH = ./include
 
-SOURCES += $$files(./src/*.cpp)
-
 HEADERS += $$files(./include/*.h)
-
+SOURCES += $$files(./src/*.cpp)
 FORMS += $$files(./forms/*.ui)
 

@@ -11,7 +11,7 @@
 //------------------------------------------------------------------------------
 //
 //------------------------------------------------------------------------------
-struct profile_element_t
+struct zds_profile_element_t
 {
     qint32  ordinate;
     qint32  inclination;
@@ -26,7 +26,7 @@ struct profile_element_t
     qint16  right_forest_removal;
 
 
-    profile_element_t()
+    zds_profile_element_t()
     {
 
     }
