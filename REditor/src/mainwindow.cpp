@@ -6,6 +6,8 @@
 #include    <QPlainTextEdit>
 #include    <QPushButton>
 
+#include    <QMessageBox>
+
 #include    "project.h"
 
 //------------------------------------------------------------------------------
@@ -58,9 +60,64 @@ void MainWindow::disablePropertiesButtons()
 //------------------------------------------------------------------------------
 //
 //------------------------------------------------------------------------------
+bool MainWindow::checkUnsavedChanges()
+{
+    if (current_project == Q_NULLPTR)
+        return true;
+
+    if (current_project->isChanged())
+    {
+        int button = QMessageBox::warning(this, tr("Warning"),
+                                        tr("Curren project is modified.\n Do you want to save it?"),
+                                        tr("Yes"), tr("No"), tr("Cancel"), 0, 2);
+
+        switch (button)
+        {
+        case 0:
+
+            current_project->save();
+            return true;
+
+        case 1:
+
+            return true;
+
+        case 2:
+
+            return false;
+        }
+    }
+
+    return true;
+}
+
+//------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------
+void MainWindow::closeEvent(QCloseEvent *event)
+{
+    if (checkUnsavedChanges())
+        event->accept();
+    else
+        event->ignore();
+}
+
+//------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------
 void MainWindow::slotCreateNewRoute()
 {
+    if (!checkUnsavedChanges())
+        return;
 
+    if (current_project != Q_NULLPTR)
+    {
+        delete current_project;
+        current_project = Q_NULLPTR;
+    }
+
+    current_project = new Project();
+    current_project->setName("empty-route");
 }
 
 //------------------------------------------------------------------------------

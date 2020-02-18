@@ -36,6 +36,10 @@ private:
 
     void disablePropertiesButtons();
 
+    bool checkUnsavedChanges();
+
+    void closeEvent(QCloseEvent *event);
+
 private slots:
 
     void slotCreateNewRoute();
