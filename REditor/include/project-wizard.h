@@ -1,10 +1,13 @@
 #ifndef     PROJECT_WIZARD_H
 #define     PROJECT_WIZARD_H
 
-#include    <QMainWindow>
+#include    <QDialog>
 
 class Project;
 
+//------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------
 namespace Ui
 {
     class ProjectWizard;
@@ -13,7 +16,7 @@ namespace Ui
 //------------------------------------------------------------------------------
 //
 //------------------------------------------------------------------------------
-class ProjectWizard : public QMainWindow
+class ProjectWizard : public QDialog
 {
     Q_OBJECT
 
@@ -27,15 +30,9 @@ private:
 
     Ui::ProjectWizard   *ui;
 
-    Project             *project;   
-
-    void createProjectFile(QString file_name);
+    Project             *project;
 
 private slots:
-
-    void slotBrowse();
-
-    void slotCreate();
 
     void slotCancel();
 };

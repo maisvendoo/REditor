@@ -85,9 +85,9 @@ unix {
 INCLUDEPATH += ./include
 INCLUDEPATH += ../CfgEditor/include
 
-HEADERS += $$files(./include/*.h) 
-SOURCES += $$files(./src/*.cpp) 
-FORMS += $$files(./forms/*.ui) 
+HEADERS += $$files(./include/*.h)
+SOURCES += $$files(./src/*.cpp)
+FORMS += $$files(./forms/*.ui)
 TRANSLATIONS += ./translations/REditor.ru_RU.ts
 RESOURCES += $$files(./resources/*.qrc)
 
