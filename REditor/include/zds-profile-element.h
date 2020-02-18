@@ -3,10 +3,12 @@
 //      Элемент профиля пути
 //
 //------------------------------------------------------------------------------
-#ifndef     PROFILE_ELEMENT_H
-#define     PROFILE_ELEMENT_H
+#ifndef     ZDS_PROFILE_ELEMENT_H
+#define     ZDS_PROFILE_ELEMENT_H
 
 #include    <QString>
+
+#include    "profile-element.h"
 
 //------------------------------------------------------------------------------
 //
@@ -30,6 +32,15 @@ struct zds_profile_element_t
     {
 
     }
+
+    profile_element_t getElement()
+    {
+        profile_element_t element;
+
+
+
+        return element;
+    }
 };
 
-#endif // PROFILE_ELEMENT_H
+#endif // ZDS_PROFILE_ELEMENT_H

@@ -35,7 +35,7 @@
     </message>
     <message>
         <location filename="../forms/mainwindow.ui" line="105"/>
-        <location filename="../src/mainwindow.cpp" line="72"/>
+        <location filename="../src/mainwindow.cpp" line="82"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
@@ -45,75 +45,146 @@
         <translation>Редактор профиля</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="135"/>
+        <location filename="../forms/mainwindow.ui" line="140"/>
+        <source>Initial ordinate</source>
+        <translation>Начальная ордината</translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="168"/>
+        <source>m</source>
+        <translation>м</translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="197"/>
+        <source>Linear coord, m</source>
+        <translation>Лин. коорд., м</translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="202"/>
+        <source>Ordinate, m</source>
+        <translation>Ордината, м</translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="207"/>
+        <source>Lenght, m</source>
+        <translation>Длина, м</translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="212"/>
+        <source>Inclination</source>
+        <translation>Уклон, тыс.</translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="217"/>
+        <source>Radius, m</source>
+        <translation>Радиус, м</translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="229"/>
+        <source>Add previos</source>
+        <translation>Добавить перед</translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="236"/>
+        <source>Add next</source>
+        <translation>Добавить после</translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="243"/>
+        <source>Remove</source>
+        <translation>Удалить</translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="263"/>
+        <source>Open</source>
+        <translation>Открыть</translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="295"/>
         <source>Route map editor</source>
         <translation>Редактор топологии</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="155"/>
+        <location filename="../forms/mainwindow.ui" line="315"/>
         <source>File</source>
         <translation>Файл</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="176"/>
+        <location filename="../forms/mainwindow.ui" line="337"/>
+        <location filename="../src/mainwindow.cpp" line="154"/>
         <source>New route</source>
         <translation>Новый маршрут</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="179"/>
+        <location filename="../forms/mainwindow.ui" line="340"/>
         <source>Ctrl+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="184"/>
+        <location filename="../forms/mainwindow.ui" line="345"/>
         <source>Open route</source>
         <translation>Открыть маршрут</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="187"/>
+        <location filename="../forms/mainwindow.ui" line="348"/>
         <source>Ctrl+O</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="192"/>
+        <location filename="../forms/mainwindow.ui" line="369"/>
+        <source>Close route</source>
+        <translation>Закрыть маршрут</translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="270"/>
         <source>Save</source>
+        <translation>Сохранить</translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="353"/>
+        <source>Save route</source>
         <translation>Сохранить маршрут</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="195"/>
+        <location filename="../forms/mainwindow.ui" line="356"/>
         <source>Ctrl+S</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="200"/>
+        <location filename="../forms/mainwindow.ui" line="361"/>
         <source>Quit</source>
         <translation>Выйти</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="203"/>
+        <location filename="../forms/mainwindow.ui" line="364"/>
         <source>Ctrl+Q</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="70"/>
+        <location filename="../src/mainwindow.cpp" line="80"/>
         <source>Warning</source>
         <translation>Предупреждение</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="71"/>
+        <location filename="../src/mainwindow.cpp" line="81"/>
         <source>Current route is modified.
  Do you want to save it?</source>
         <translation>Текущий маршрут был изменен. Желаете сохранить изменения?</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="72"/>
+        <location filename="../src/mainwindow.cpp" line="82"/>
         <source>Yes</source>
         <translation>Да</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="72"/>
+        <location filename="../src/mainwindow.cpp" line="82"/>
         <source>No</source>
         <translation>Нет</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="156"/>
+        <source>Routes (*.xml)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

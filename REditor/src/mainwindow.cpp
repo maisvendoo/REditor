@@ -5,10 +5,16 @@
 #include    <QLineEdit>
 #include    <QPlainTextEdit>
 #include    <QPushButton>
+#include    <QTreeWidget>
+#include    <QTreeWidgetItem>
 
 #include    <QMessageBox>
+#include    <QDir>
+#include    <QFileInfo>
+#include    <QFileDialog>
 
 #include    "project.h"
+#include    "project-wizard.h"
 
 //------------------------------------------------------------------------------
 //
@@ -30,6 +36,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     connect(ui->pbPropApply, &QPushButton::clicked, this, &MainWindow::slotApplyRouteProperties);
     connect(ui->pbPropCancel, &QPushButton::clicked, ui->leRouteTitle, &QLineEdit::undo);
     connect(ui->pbPropCancel, &QPushButton::clicked, ui->ptRouteDescription, &QPlainTextEdit::undo);
+
+    ui->twProfileData->horizontalHeader()->setStretchLastSection(true);
+    ui->twProfileData->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    ui->twProfileData->setRowCount(0);
 }
 
 //------------------------------------------------------------------------------
@@ -106,6 +116,29 @@ void MainWindow::closeEvent(QCloseEvent *event)
 //------------------------------------------------------------------------------
 //
 //------------------------------------------------------------------------------
+void MainWindow::initProjectFilesystem(QString path)
+{
+    QFileInfo   info(path);
+
+    current_project->setName(info.baseName());
+    current_project->setProjectDir(info.path());
+}
+
+//------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------
+void MainWindow::updateProjectTree()
+{
+    ui->treeProject->clear();
+
+    QTreeWidgetItem *item = new QTreeWidgetItem;
+    item->setText(0, current_project->getName());
+    ui->treeProject->addTopLevelItem(item);
+}
+
+//------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------
 void MainWindow::slotCreateNewRoute()
 {
     if (!checkUnsavedChanges())
@@ -118,7 +151,9 @@ void MainWindow::slotCreateNewRoute()
     }
 
     current_project = new Project();
-    current_project->setName("empty-route");
+
+    ProjectWizard *wizard = new ProjectWizard(current_project, this);
+    wizard->show();
 }
 
 //------------------------------------------------------------------------------

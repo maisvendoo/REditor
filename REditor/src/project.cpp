@@ -1,13 +1,19 @@
 #include    "project.h"
 
 #include    "project-unit.h"
+#include    "profile.h"
 
 //------------------------------------------------------------------------------
 //
 //------------------------------------------------------------------------------
 Project::Project(QObject *parent) : QObject(parent)
+  , name("new_route")
+  , title("")
+  , description("")
+  , is_changed(false)
+  , profile(new Profile)
 {
-
+    units.push_back(profile);
 }
 
 //------------------------------------------------------------------------------
@@ -40,6 +46,8 @@ void Project::save()
         if (unit != Q_NULLPTR)
             unit->save();
     }
+
+    is_changed = false;
 }
 
 //------------------------------------------------------------------------------
@@ -70,6 +78,14 @@ void Project::setDescription(QString description)
     this->description = description;
 
     is_changed = true;
+}
+
+//------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------
+void Project::setProjectDir(QString project_dir)
+{
+    this->project_dir = project_dir;
 }
 
 //------------------------------------------------------------------------------
@@ -107,4 +123,12 @@ QString Project::getTitle() const
 QString Project::getDescription() const
 {
     return description;
+}
+
+//------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------
+Profile *Project::getProfile()
+{
+    return profile;
 }

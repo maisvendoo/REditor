@@ -22,7 +22,7 @@ public:
 
     bool isChanged() const;
 
-private:
+protected:
 
     bool    is_changed;
 };

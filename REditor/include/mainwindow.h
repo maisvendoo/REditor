@@ -40,6 +40,10 @@ private:
 
     void closeEvent(QCloseEvent *event);
 
+    void initProjectFilesystem(QString path);
+
+    void updateProjectTree();
+
 private slots:
 
     void slotCreateNewRoute();

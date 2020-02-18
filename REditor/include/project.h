@@ -5,6 +5,8 @@
 
 class ProjectUnit;
 
+class Profile;
+
 //------------------------------------------------------------------------------
 //
 //------------------------------------------------------------------------------
@@ -30,6 +32,8 @@ public:
 
     void setDescription(QString description);
 
+    void setProjectDir(QString project_dir);
+
     bool isChanged();
 
     QString getName() const;
@@ -37,6 +41,8 @@ public:
     QString getTitle() const;
 
     QString getDescription() const;
+
+    Profile *getProfile();
 
 private:
 
@@ -49,8 +55,14 @@ private:
     /// Описание проекта
     QString     description;
 
-    /// Проект изменене
+    /// Проект измененен
     bool        is_changed;
+
+    /// Профиль (продольный и в плане)
+    Profile     *profile;
+
+    /// Директория с файлами проекта
+    QString     project_dir;
 
     /// Список частей проекта
     std::vector<ProjectUnit *>  units;
