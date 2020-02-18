@@ -3,8 +3,8 @@
 
 #include    "profile-element.h"
 
-#include    <QLinkedList>
+#include    <QList>
 
-typedef     QLinkedList<profile_element_t *>    profile_container_t;
+typedef     QList<profile_element_t *>    profile_container_t;
 
 #endif // PROFILE_CONTAINER_H

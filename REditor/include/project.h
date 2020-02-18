@@ -42,6 +42,8 @@ public:
 
     QString getDescription() const;
 
+    QString getProjectDir() const;
+
     Profile *getProfile();
 
 private:

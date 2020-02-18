@@ -27,9 +27,13 @@ private:
 
     Ui::ProjectWizard   *ui;
 
-    Project             *project;
+    Project             *project;   
+
+    void createProjectFile(QString file_name);
 
 private slots:
+
+    void slotBrowse();
 
     void slotCreate();
 

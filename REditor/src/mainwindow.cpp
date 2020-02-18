@@ -153,7 +153,12 @@ void MainWindow::slotCreateNewRoute()
     current_project = new Project();
 
     ProjectWizard *wizard = new ProjectWizard(current_project, this);
-    wizard->show();
+
+
+    if (current_project->getName().isEmpty())
+        return;
+
+    updateProjectTree();
 }
 
 //------------------------------------------------------------------------------

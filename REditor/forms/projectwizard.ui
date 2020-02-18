@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>460</width>
-    <height>195</height>
+    <height>223</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,6 +21,16 @@
     <item row="0" column="0">
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Route project name</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="leProjectName"/>
+      </item>
+      <item>
        <widget class="QLabel" name="label">
         <property name="text">
          <string>Create route in directory</string>
@@ -30,7 +40,7 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <widget class="QLineEdit" name="lineEdit"/>
+         <widget class="QLineEdit" name="leProjDirectory"/>
         </item>
         <item>
          <widget class="QPushButton" name="pbBrowse">
@@ -49,7 +59,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_2"/>
+       <widget class="QLineEdit" name="leRouteTitle"/>
       </item>
       <item>
        <spacer name="verticalSpacer">

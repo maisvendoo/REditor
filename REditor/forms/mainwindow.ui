@@ -144,7 +144,7 @@
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_3">
                 <item>
-                 <widget class="QSpinBox" name="spinBox">
+                 <widget class="QSpinBox" name="sbInitOrdinate">
                   <property name="minimumSize">
                    <size>
                     <width>150</width>
@@ -321,7 +321,14 @@
     <addaction name="separator"/>
     <addaction name="actionQuit"/>
    </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionZDS_profile_import"/>
+   </widget>
    <addaction name="menuFile"/>
+   <addaction name="menuTools"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -367,6 +374,11 @@
   <action name="actionClose">
    <property name="text">
     <string>Close route</string>
+   </property>
+  </action>
+  <action name="actionZDS_profile_import">
+   <property name="text">
+    <string>ZDS profile import</string>
    </property>
   </action>
  </widget>

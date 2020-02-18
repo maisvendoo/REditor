@@ -82,7 +82,8 @@ unix {
     }
 }
 
-INCLUDEPATH = ./include
+INCLUDEPATH += ./include
+INCLUDEPATH += ../CfgEditor/include
 
 HEADERS += $$files(./include/*.h) 
 SOURCES += $$files(./src/*.cpp) 

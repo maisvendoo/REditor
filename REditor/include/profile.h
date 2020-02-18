@@ -20,10 +20,21 @@ public:
 
     void save();
 
+    void insert_before(int i, profile_element_t *element);
+
+    void insert_after(int i, profile_element_t *element);
+
+    void remove(int i);
+
+    profile_element_t *elementAt(int i);
+
+    void setInitOrdinate(double init_ordinate);
+
 private:
 
+    double init_ordinate;
 
-    profile_container_t     container;
+    profile_container_t     elements;
 };
 
 #endif // PROFILE_H
