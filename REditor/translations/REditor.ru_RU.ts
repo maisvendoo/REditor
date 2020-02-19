@@ -229,18 +229,23 @@
         <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../src/project-wizard.cpp" line="69"/>
-        <location filename="../src/project-wizard.cpp" line="75"/>
+        <location filename="../src/project-wizard.cpp" line="88"/>
+        <source>Open project&apos;s directory</source>
+        <translation>Расположение проекта</translation>
+    </message>
+    <message>
+        <location filename="../src/project-wizard.cpp" line="103"/>
+        <location filename="../src/project-wizard.cpp" line="109"/>
         <source>Warning</source>
         <translation>Предупреждение</translation>
     </message>
     <message>
-        <location filename="../src/project-wizard.cpp" line="69"/>
+        <location filename="../src/project-wizard.cpp" line="103"/>
         <source>Please, set project&apos;s name</source>
         <translation>Пожалуйста, укажите имя проекта</translation>
     </message>
     <message>
-        <location filename="../src/project-wizard.cpp" line="75"/>
+        <location filename="../src/project-wizard.cpp" line="109"/>
         <source>Please, set project placement</source>
         <translation>Пожалуйста, укажите расположение проекта</translation>
     </message>
