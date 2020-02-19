@@ -32,7 +32,13 @@ private:
 
     Project             *project;
 
+    void createProjectFiles();
+
 private slots:
+
+    void slotBrowse();
+
+    void slotCreateRoute();
 
     void slotCancel();
 };
