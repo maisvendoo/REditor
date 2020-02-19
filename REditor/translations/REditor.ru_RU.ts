@@ -35,7 +35,7 @@
     </message>
     <message>
         <location filename="../forms/mainwindow.ui" line="105"/>
-        <location filename="../src/mainwindow.cpp" line="82"/>
+        <location filename="../src/mainwindow.cpp" line="83"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
@@ -110,30 +110,39 @@
         <translation>Файл</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="337"/>
-        <location filename="../src/mainwindow.cpp" line="154"/>
+        <location filename="../forms/mainwindow.ui" line="326"/>
+        <source>Tools</source>
+        <translation>Инструменты</translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="344"/>
         <source>New route</source>
         <translation>Новый маршрут</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="340"/>
+        <location filename="../forms/mainwindow.ui" line="347"/>
         <source>Ctrl+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="345"/>
+        <location filename="../forms/mainwindow.ui" line="352"/>
         <source>Open route</source>
         <translation>Открыть маршрут</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="348"/>
+        <location filename="../forms/mainwindow.ui" line="355"/>
         <source>Ctrl+O</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="369"/>
+        <location filename="../forms/mainwindow.ui" line="376"/>
         <source>Close route</source>
         <translation>Закрыть маршрут</translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="381"/>
+        <source>ZDS profile import</source>
+        <translation>Импорт профиля ZDS</translation>
     </message>
     <message>
         <location filename="../forms/mainwindow.ui" line="270"/>
@@ -141,50 +150,99 @@
         <translation>Сохранить</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="353"/>
+        <location filename="../forms/mainwindow.ui" line="360"/>
         <source>Save route</source>
         <translation>Сохранить маршрут</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="356"/>
+        <location filename="../forms/mainwindow.ui" line="363"/>
         <source>Ctrl+S</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="361"/>
+        <location filename="../forms/mainwindow.ui" line="368"/>
         <source>Quit</source>
         <translation>Выйти</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="364"/>
+        <location filename="../forms/mainwindow.ui" line="371"/>
         <source>Ctrl+Q</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="80"/>
+        <location filename="../src/mainwindow.cpp" line="81"/>
         <source>Warning</source>
         <translation>Предупреждение</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="81"/>
+        <location filename="../src/mainwindow.cpp" line="82"/>
         <source>Current route is modified.
  Do you want to save it?</source>
         <translation>Текущий маршрут был изменен. Желаете сохранить изменения?</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="82"/>
+        <location filename="../src/mainwindow.cpp" line="83"/>
         <source>Yes</source>
         <translation>Да</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="82"/>
+        <location filename="../src/mainwindow.cpp" line="83"/>
         <source>No</source>
         <translation>Нет</translation>
     </message>
+</context>
+<context>
+    <name>ProjectWizard</name>
     <message>
-        <location filename="../src/mainwindow.cpp" line="156"/>
-        <source>Routes (*.xml)</source>
-        <translation type="unfinished"></translation>
+        <location filename="../forms/project-wizard.ui" line="17"/>
+        <source>New route creation</source>
+        <translation>Создание нового маршрута</translation>
+    </message>
+    <message>
+        <location filename="../forms/project-wizard.ui" line="25"/>
+        <source>Route project name</source>
+        <translation>Имя проекта маршрута</translation>
+    </message>
+    <message>
+        <location filename="../forms/project-wizard.ui" line="35"/>
+        <source>Create route in directory</source>
+        <translation>Создать проект в каталоге</translation>
+    </message>
+    <message>
+        <location filename="../forms/project-wizard.ui" line="54"/>
+        <source>Browse</source>
+        <translation>Обзор</translation>
+    </message>
+    <message>
+        <location filename="../forms/project-wizard.ui" line="76"/>
+        <source>Route title</source>
+        <translation>Название маршрута</translation>
+    </message>
+    <message>
+        <location filename="../forms/project-wizard.ui" line="114"/>
+        <source>Create</source>
+        <translation>Создать</translation>
+    </message>
+    <message>
+        <location filename="../forms/project-wizard.ui" line="121"/>
+        <source>Cancel</source>
+        <translation>Отмена</translation>
+    </message>
+    <message>
+        <location filename="../src/project-wizard.cpp" line="69"/>
+        <location filename="../src/project-wizard.cpp" line="75"/>
+        <source>Warning</source>
+        <translation>Предупреждение</translation>
+    </message>
+    <message>
+        <location filename="../src/project-wizard.cpp" line="69"/>
+        <source>Please, set project&apos;s name</source>
+        <translation>Пожалуйста, укажите имя проекта</translation>
+    </message>
+    <message>
+        <location filename="../src/project-wizard.cpp" line="75"/>
+        <source>Please, set project placement</source>
+        <translation>Пожалуйста, укажите расположение проекта</translation>
     </message>
 </context>
 </TS>

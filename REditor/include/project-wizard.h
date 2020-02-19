@@ -34,6 +34,8 @@ private:
 
     void createProjectFiles();
 
+    void createEmptyFile(QString file_name);
+
 private slots:
 
     void slotBrowse();

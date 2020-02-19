@@ -116,24 +116,9 @@ void MainWindow::closeEvent(QCloseEvent *event)
 //------------------------------------------------------------------------------
 //
 //------------------------------------------------------------------------------
-void MainWindow::initProjectFilesystem(QString path)
-{
-    QFileInfo   info(path);
-
-    current_project->setName(info.baseName());
-    current_project->setProjectDir(info.path());
-}
-
-//------------------------------------------------------------------------------
-//
-//------------------------------------------------------------------------------
 void MainWindow::updateProjectTree()
 {
-    ui->treeProject->clear();
 
-    QTreeWidgetItem *item = new QTreeWidgetItem;
-    item->setText(0, current_project->getName());
-    ui->treeProject->addTopLevelItem(item);
 }
 
 //------------------------------------------------------------------------------
@@ -154,6 +139,8 @@ void MainWindow::slotCreateNewRoute()
 
     ProjectWizard *wizard = new ProjectWizard(current_project, this);
     wizard->exec();
+
+    updateProjectTree();
 }
 
 //------------------------------------------------------------------------------
