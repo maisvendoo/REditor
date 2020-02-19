@@ -30,6 +30,8 @@ public:
 
     void setInitOrdinate(double init_ordinate);
 
+    profile_container_t getElements();
+
 private:
 
     double init_ordinate;

@@ -12,13 +12,13 @@ struct profile_element_t
     double  ordinate;
     double  length;
     double  inclination;
-    quint32 radius;
+    qint32 radius;
 
     profile_element_t()
-        : linear_coordinate(0)
-        , ordinate(0)
-        , length(0)
-        , inclination(0)
+        : linear_coordinate(0.0)
+        , ordinate(0.0)
+        , length(100.0)
+        , inclination(0.0)
         , radius(0)
     {
 

@@ -77,3 +77,11 @@ void Profile::setInitOrdinate(double init_ordinate)
 {
     this->init_ordinate = init_ordinate;
 }
+
+//------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------
+profile_container_t Profile::getElements()
+{
+    return elements;
+}

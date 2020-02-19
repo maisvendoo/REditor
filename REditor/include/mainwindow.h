@@ -5,6 +5,8 @@
 
 class Project;
 
+class QTableWidget;
+
 //------------------------------------------------------------------------------
 //
 //------------------------------------------------------------------------------
@@ -42,6 +44,8 @@ private:
 
     void updateProjectTree();
 
+    void updateProfileData(QTableWidget *tw);
+
 private slots:
 
     void slotCreateNewRoute();
@@ -53,6 +57,14 @@ private slots:
     void slotRoutePropertiesChanged();
 
     void slotApplyRouteProperties();
+
+    void slotAddProfElementBefore();
+
+    void slotAddProfElementAfter();
+
+    void slotRemoveProfElement();
+
+    void slotProfileChanged(int row, int column);
 };
 
 #endif // MAINWINDOW_H
